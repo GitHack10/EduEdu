@@ -27,16 +27,24 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:src="@drawable/placeholder_restaurant" />
 
-        <ImageView
-            android:id="@+id/logoRestImage"
+        <LinearLayout
+            android:id="@+id/logoContainer"
             android:layout_width="@dimen/logo_restaurant"
             android:layout_height="@dimen/logo_restaurant"
-            android:scaleType="centerCrop"
+            android:background="@drawable/placeholder_restaurant_logo"
             app:layout_constraintBottom_toBottomOf="@id/bannerRestImage"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/bannerRestImage"
-            tools:src="@drawable/ic_burger_king" />
+            app:layout_constraintTop_toTopOf="@id/bannerRestImage">
+
+            <ImageView
+                android:id="@+id/logoRestImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:scaleType="fitCenter"
+                tools:src="@drawable/ic_burger_king" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/nameRestTextView"

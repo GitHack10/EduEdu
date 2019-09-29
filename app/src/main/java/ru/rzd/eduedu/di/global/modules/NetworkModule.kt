@@ -57,6 +57,7 @@ class NetworkModule {
     fun provideEduEduApi(retrofit: Retrofit): EduEduApi = retrofit.create()
 
     companion object {
-        const val BASE_API_URL = "http://www.mocky.io/v2/"
+        const val BASE_API_URL = "http://499f75ac.ngrok.io"
+        const val MOCK_API_URL = "http://www.mocky.io/v2/"
     }
 }
