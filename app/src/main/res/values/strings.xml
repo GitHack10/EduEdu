@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">EduEdu</string>
+
+    <!-- ERRORS -->
+    <string name="error_unknown">Неизвестная ошибка</string>
+    <string name="error_network">Ошибка сети</string>
+    <string name="error_network_get_response">Не удалось получить ответ ошибки</string>
+    <string name="error_network_convert_response">Не удалось сконвертировать ответ ошибки</string>
+    <string name="error_load_data">Не удалось загрузить данные</string>
+
+    <!-- Bottom Nav Menu -->
+    <string name="menu_home">Главная</string>
+    <string name="menu_basket">Корзина</string>
+    <string name="menu_profile">Профиль</string>
+
+    <string name="open_restaurants">Доступные заведения</string>
 </resources>

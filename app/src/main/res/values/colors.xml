@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="colorPrimaryDark">#D2D2D2</color>
+    <color name="colorAccent">#E21A1A</color>
+
+    <color name="light_gray">#F2F2F2</color>
+
+    <color name="textBody">#58606F</color>
+    <color name="textHint">#BFADAD</color>
+
+    <color name="colorButtonEnabledPressed">#80E21A1A</color>
+    <color name="colorButtonDisabled">#F5F7FC</color>
+    <color name="colorButtonDisabledPressed">#d9dce2</color>
+
+    <color name="itemDivider">#BFADAD</color>
+    <color name="placeholder_rest_banner">#F5F5F5</color>
 </resources>
