@@ -6,6 +6,7 @@ import androidx.core.view.isVisible
 import com.arellomobile.mvp.presenter.InjectPresenter
 import com.arellomobile.mvp.presenter.ProvidePresenter
 import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.toolbar.*
 import org.jetbrains.anko.support.v4.toast
 import ru.rzd.eduedu.App
 import ru.rzd.eduedu.R
@@ -22,7 +23,8 @@ class HomeFragment : BaseFragment(), HomeView, View.OnClickListener {
     @InjectPresenter
     lateinit var presenter: HomePresenter
 
-    @ProvidePresenter fun providePresenter() = presenter
+    @ProvidePresenter
+    fun providePresenter() = presenter
 
     private val restaurantAdapter by lazy {
         RestaurantAdapter(ArrayList()) {
@@ -45,6 +47,7 @@ class HomeFragment : BaseFragment(), HomeView, View.OnClickListener {
 
     private fun initViews() {
         setupToolbar(getString(R.string.menu_home))
+        setupToolbarMenu()
         homeRecyclerView.adapter = restaurantAdapter
     }
 
@@ -69,6 +72,25 @@ class HomeFragment : BaseFragment(), HomeView, View.OnClickListener {
     override fun showRestaurants(restaurants: List<Restaurant>) {
         restaurantAdapter.list = restaurants
         restaurantAdapter.submitList(restaurants)
+    }
+
+    private fun setupToolbarMenu() {
+        menuIconPlaceholder.isVisible = false
+        toolbar.run {
+            // Не добавляет меню, если уже имеется
+            if (menu.size() <= 0) {
+                inflateMenu(R.menu.search)
+                setOnMenuItemClickListener {
+                    when (it.itemId) {
+                        R.id.menu_search -> {
+                            true
+                        }
+
+                        else -> false
+                    }
+                }
+            }
+        }
     }
 
     override fun onBackPressed() = presenter.onBackPressed()

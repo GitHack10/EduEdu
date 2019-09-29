@@ -5,7 +5,7 @@ import ru.rzd.eduedu.di.global.scopes.FragmentScope
 import ru.rzd.eduedu.presentation.screens.main.home.ui.HomeFragment
 
 @Subcomponent
-@HomeScope
+@FragmentScope
 interface HomeComponent {
     fun inject(fragment: HomeFragment)
 

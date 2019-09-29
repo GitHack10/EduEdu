@@ -10,8 +10,14 @@
 
     <!-- Bottom Nav Menu -->
     <string name="menu_home">Главная</string>
+    <string name="menu_notifications">Уведомления</string>
     <string name="menu_basket">Корзина</string>
     <string name="menu_profile">Профиль</string>
 
+    <!-- Home -->
     <string name="open_restaurants">Доступные заведения</string>
+    <string name="search_hint">Введите название блюда</string>
+
+    <!-- Notifications -->
+    <string name="notifications_empty_error">У вас пока нет уведомлений</string>
 </resources>

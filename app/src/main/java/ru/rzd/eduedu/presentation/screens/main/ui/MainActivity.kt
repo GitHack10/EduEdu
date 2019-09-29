@@ -57,6 +57,11 @@ class MainActivity : BaseActivity(), MainView, BottomBarListener {
                     true
                 }
 
+                R.id.navigation_notifications -> {
+                    presenter.onNotificationsClicked()
+                    true
+                }
+
                 R.id.navigation_profile -> {
                     presenter.onProfileClicked()
                     true
@@ -96,6 +101,7 @@ class MainActivity : BaseActivity(), MainView, BottomBarListener {
             }
 
         const val HOME_TAB = 1
-        const val PROFILE_TAB = 2
+        const val NOTIFICATIONS_TAB = 2
+        const val PROFILE_TAB = 3
     }
 }

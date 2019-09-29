@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="searchViewStyle">@style/AppSearchViewStyle</item>
     </style>
 
     <!-- Кастомная AppTheme.Launcher. Устанавливает в качестве фона вашу drawable -->
@@ -13,5 +14,14 @@
         <item name="android:windowBackground">@drawable/launch_screen</item>
         <!-- для Android 5+ вы можете поменять цвет colorPrimaryDark, чтобы соответствовать цвету windowBackground -->
         <!-- <item name="colorPrimaryDark">@android:color/white</item> -->
+    </style>
+
+    <style name="AppSearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!--<item name="android:textCursorDrawable">@drawable/white_cursor</item>-->
+        <item name="queryBackground">@android:color/transparent</item>
+        <item name="searchIcon">@drawable/ic_search</item>
+        <item name="searchHintIcon">@null</item>
+        <item name="queryHint">@string/search_hint</item>
+        <item name="android:imeActionId">6</item>
     </style>
 </resources>

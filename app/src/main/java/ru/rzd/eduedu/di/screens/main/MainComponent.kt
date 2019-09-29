@@ -5,7 +5,7 @@ import ru.rzd.eduedu.di.global.scopes.ActivityScope
 import ru.rzd.eduedu.presentation.screens.main.ui.MainActivity
 
 @Subcomponent
-@MainScope
+@ActivityScope
 interface MainComponent {
     fun inject(activity: MainActivity)
 
