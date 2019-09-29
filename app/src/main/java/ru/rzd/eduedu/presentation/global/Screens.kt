@@ -2,6 +2,7 @@ package ru.rzd.eduedu.presentation.global
 
 import ru.rzd.eduedu.presentation.screens.main.home.ui.HomeFragment
 import ru.rzd.eduedu.presentation.screens.main.notifications.ui.NotificationsFragment
+import ru.rzd.eduedu.presentation.screens.main.profile.ui.ProfileFragment
 import ru.terrakok.cicerone.android.support.SupportAppScreen
 
 /** Created by Kamil Abdulatipov on 27.09.2019.
@@ -20,7 +21,9 @@ object Screens {
         override fun getFragment() = NotificationsFragment()
     }
 
-    object BasketScreen : SupportAppScreen()
+    object ProfileScreen : SupportAppScreen() {
+        override fun getFragment() = ProfileFragment()
+    }
 
-    object ProfileScreen : SupportAppScreen()
+    object BasketScreen : SupportAppScreen()
 }

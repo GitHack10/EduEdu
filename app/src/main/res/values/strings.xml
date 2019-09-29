@@ -14,10 +14,14 @@
     <string name="menu_basket">Корзина</string>
     <string name="menu_profile">Профиль</string>
 
-    <!-- Home -->
+    <!-- Home Screen -->
     <string name="open_restaurants">Доступные заведения</string>
     <string name="search_hint">Введите название блюда</string>
 
-    <!-- Notifications -->
+    <!-- Notifications Screen -->
     <string name="notifications_empty_error">У вас пока нет уведомлений</string>
+
+    <!-- Profile Screen -->
+    <string name="profile_message">Для входа в личный кабинет необходима авторизация</string>
+    <string name="profile_sign_in">Войти</string>
 </resources>

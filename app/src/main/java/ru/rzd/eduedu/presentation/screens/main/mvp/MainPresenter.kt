@@ -36,7 +36,7 @@ class MainPresenter @Inject constructor(
 
     fun onProfileClicked() {
         if (selectedScreen != PROFILE_TAB) {
-//            router.newRootScreen(Screens.ProfileScreen)
+            router.newRootScreen(Screens.ProfileScreen)
         }
         selectedScreen = PROFILE_TAB
     }

@@ -5,15 +5,12 @@ import android.view.View
 import androidx.core.view.isVisible
 import com.arellomobile.mvp.presenter.InjectPresenter
 import com.arellomobile.mvp.presenter.ProvidePresenter
-import kotlinx.android.synthetic.main.fragment_home.*
 import kotlinx.android.synthetic.main.fragment_notification.*
 import kotlinx.android.synthetic.main.loading_notification_empty.*
-import kotlinx.android.synthetic.main.toolbar.*
 import org.jetbrains.anko.support.v4.toast
 import ru.rzd.eduedu.App
 import ru.rzd.eduedu.R
 import ru.rzd.eduedu.domain.global.models.Notification
-import ru.rzd.eduedu.domain.global.models.Restaurant
 import ru.rzd.eduedu.presentation.global.base.BaseFragment
 import ru.rzd.eduedu.presentation.screens.main.notifications.mvp.NotificationsPresenter
 import ru.rzd.eduedu.presentation.screens.main.notifications.mvp.NotificationsView

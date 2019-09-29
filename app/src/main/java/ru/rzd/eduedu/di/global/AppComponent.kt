@@ -10,6 +10,7 @@ import ru.rzd.eduedu.di.global.modules.NetworkModule
 import ru.rzd.eduedu.di.screens.home.HomeComponent
 import ru.rzd.eduedu.di.screens.main.MainComponent
 import ru.rzd.eduedu.di.screens.notifications.NotificationsComponent
+import ru.rzd.eduedu.di.screens.profile.ProfileComponent
 import ru.rzd.eduedu.presentation.global.base.BaseActivity
 import javax.inject.Singleton
 
@@ -28,6 +29,7 @@ interface AppComponent {
     fun mainComponentBuilder(): MainComponent.Builder
     fun homeComponentBuilder(): HomeComponent.Builder
     fun notificationComponentBuilder(): NotificationsComponent.Builder
+    fun profileComponentBuilder(): ProfileComponent.Builder
 
     @Component.Builder
     interface Builder {
